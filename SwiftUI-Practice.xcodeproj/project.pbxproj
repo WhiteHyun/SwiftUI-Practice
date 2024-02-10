@@ -14,6 +14,9 @@
 		BADD81802B775018001B16B3 /* SwiftUI_PracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD817F2B775018001B16B3 /* SwiftUI_PracticeTests.swift */; };
 		BADD818A2B775018001B16B3 /* SwiftUI_PracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD81892B775018001B16B3 /* SwiftUI_PracticeUITests.swift */; };
 		BADD818C2B775018001B16B3 /* SwiftUI_PracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD818B2B775018001B16B3 /* SwiftUI_PracticeUITestsLaunchTests.swift */; };
+		BADD819D2B77512F001B16B3 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD819C2B77512F001B16B3 /* ClockView.swift */; };
+		BADD819F2B775141001B16B3 /* ClockFaceCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD819E2B775141001B16B3 /* ClockFaceCanvas.swift */; };
+		BADD81A12B77514C001B16B3 /* ClockHandsCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD81A02B77514C001B16B3 /* ClockHandsCanvas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		BADD81852B775018001B16B3 /* SwiftUI-PracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-PracticeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BADD81892B775018001B16B3 /* SwiftUI_PracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_PracticeUITests.swift; sourceTree = "<group>"; };
 		BADD818B2B775018001B16B3 /* SwiftUI_PracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_PracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BADD819C2B77512F001B16B3 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
+		BADD819E2B775141001B16B3 /* ClockFaceCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockFaceCanvas.swift; sourceTree = "<group>"; };
+		BADD81A02B77514C001B16B3 /* ClockHandsCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockHandsCanvas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +100,7 @@
 		BADD816D2B775017001B16B3 /* SwiftUI-Practice */ = {
 			isa = PBXGroup;
 			children = (
+				BADD819B2B775122001B16B3 /* ClockView */,
 				BADD816E2B775017001B16B3 /* SwiftUI_PracticeApp.swift */,
 				BADD81702B775017001B16B3 /* ContentView.swift */,
 				BADD81722B775018001B16B3 /* Assets.xcassets */,
@@ -125,6 +132,16 @@
 				BADD818B2B775018001B16B3 /* SwiftUI_PracticeUITestsLaunchTests.swift */,
 			);
 			path = "SwiftUI-PracticeUITests";
+			sourceTree = "<group>";
+		};
+		BADD819B2B775122001B16B3 /* ClockView */ = {
+			isa = PBXGroup;
+			children = (
+				BADD819C2B77512F001B16B3 /* ClockView.swift */,
+				BADD819E2B775141001B16B3 /* ClockFaceCanvas.swift */,
+				BADD81A02B77514C001B16B3 /* ClockHandsCanvas.swift */,
+			);
+			path = ClockView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -301,7 +318,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BADD81712B775017001B16B3 /* ContentView.swift in Sources */,
+				BADD81A12B77514C001B16B3 /* ClockHandsCanvas.swift in Sources */,
+				BADD819D2B77512F001B16B3 /* ClockView.swift in Sources */,
 				BADD816F2B775017001B16B3 /* SwiftUI_PracticeApp.swift in Sources */,
+				BADD819F2B775141001B16B3 /* ClockFaceCanvas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,15 +7,24 @@
 
 import SwiftUI
 
+enum NavigatingViewEnum: String, CaseIterable {
+  case canvasView
+}
+
 struct ContentView: View {
+
   var body: some View {
-    VStack {
-      Image(systemName: "globe")
-        .imageScale(.large)
-        .foregroundStyle(.tint)
-      Text("Hello, world!")
+    NavigationStack {
+      List(NavigatingViewEnum.allCases, id: \.rawValue) { subject in
+        NavigationLink(subject.rawValue) {
+          switch subject {
+          case .canvasView:
+            ClockView()
+          }
+        }
+      }
     }
-    .padding()
+    .navigationTitle("Practice")
   }
 }
 
