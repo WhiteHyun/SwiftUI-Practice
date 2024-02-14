@@ -7,12 +7,15 @@
 
 import SwiftUI
 
+// MARK: - NavigatingViewEnum
+
 enum NavigatingViewEnum: String, CaseIterable {
   case canvasView
 }
 
-struct ContentView: View {
+// MARK: - ContentView
 
+struct ContentView: View {
   var body: some View {
     NavigationStack {
       List(NavigatingViewEnum.allCases, id: \.rawValue) { subject in
