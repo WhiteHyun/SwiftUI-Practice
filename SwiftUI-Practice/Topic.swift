@@ -11,19 +11,25 @@ import Foundation
 
 enum Subject: String, CaseIterable {
   case canvas
+  case path
 }
 
 // MARK: - Topic
 
 enum Topic: CaseIterable {
   case clockView
+  case bubbleShape
 }
+
+// MARK: CustomStringConvertible
 
 extension Topic: CustomStringConvertible {
   var description: String {
     switch self {
     case .clockView:
-      return "Clock View ⏱️"
+      "Clock View ⏱️"
+    case .bubbleShape:
+      "Bubble Shape 💬"
     }
   }
 }

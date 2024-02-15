@@ -8,5 +8,6 @@
 struct RootComponent {
   let topics: [Subject: [Topic]] = [
     .canvas: [.clockView],
+    .path: [.bubbleShape],
   ]
 }

@@ -38,6 +38,8 @@ struct ContentView: View {
     switch topic {
     case .clockView:
       ClockView()
+    case .bubbleShape:
+      BubbleView()
     }
   }
 }
