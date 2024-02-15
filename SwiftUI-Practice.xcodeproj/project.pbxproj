@@ -7,13 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BADD816F2B775017001B16B3 /* SwiftUI_PracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD816E2B775017001B16B3 /* SwiftUI_PracticeApp.swift */; };
+		BA52042D2B7DEC03001C1D99 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52042C2B7DEC03001C1D99 /* Topic.swift */; };
+		BA52042F2B7DEEBD001C1D99 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52042E2B7DEEBD001C1D99 /* Component.swift */; };
+		BADD816F2B775017001B16B3 /* SwiftUIPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD816E2B775017001B16B3 /* SwiftUIPracticeApp.swift */; };
 		BADD81712B775017001B16B3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD81702B775017001B16B3 /* ContentView.swift */; };
 		BADD81732B775018001B16B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BADD81722B775018001B16B3 /* Assets.xcassets */; };
 		BADD81762B775018001B16B3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BADD81752B775018001B16B3 /* Preview Assets.xcassets */; };
-		BADD81802B775018001B16B3 /* SwiftUI_PracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD817F2B775018001B16B3 /* SwiftUI_PracticeTests.swift */; };
-		BADD818A2B775018001B16B3 /* SwiftUI_PracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD81892B775018001B16B3 /* SwiftUI_PracticeUITests.swift */; };
-		BADD818C2B775018001B16B3 /* SwiftUI_PracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD818B2B775018001B16B3 /* SwiftUI_PracticeUITestsLaunchTests.swift */; };
+		BADD81802B775018001B16B3 /* SwiftUIPracticeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD817F2B775018001B16B3 /* SwiftUIPracticeTests.swift */; };
+		BADD818A2B775018001B16B3 /* SwiftUIPracticeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD81892B775018001B16B3 /* SwiftUIPracticeUITests.swift */; };
+		BADD818C2B775018001B16B3 /* SwiftUIPracticeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD818B2B775018001B16B3 /* SwiftUIPracticeUITestsLaunchTests.swift */; };
 		BADD819D2B77512F001B16B3 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD819C2B77512F001B16B3 /* ClockView.swift */; };
 		BADD819F2B775141001B16B3 /* ClockFaceCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD819E2B775141001B16B3 /* ClockFaceCanvas.swift */; };
 		BADD81A12B77514C001B16B3 /* ClockHandsCanvas.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD81A02B77514C001B16B3 /* ClockHandsCanvas.swift */; };
@@ -37,16 +39,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA52042C2B7DEC03001C1D99 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		BA52042E2B7DEEBD001C1D99 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		BADD816B2B775017001B16B3 /* SwiftUI-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BADD816E2B775017001B16B3 /* SwiftUI_PracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_PracticeApp.swift; sourceTree = "<group>"; };
+		BADD816E2B775017001B16B3 /* SwiftUIPracticeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeApp.swift; sourceTree = "<group>"; };
 		BADD81702B775017001B16B3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		BADD81722B775018001B16B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BADD81752B775018001B16B3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BADD817B2B775018001B16B3 /* SwiftUI-PracticeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-PracticeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BADD817F2B775018001B16B3 /* SwiftUI_PracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_PracticeTests.swift; sourceTree = "<group>"; };
+		BADD817F2B775018001B16B3 /* SwiftUIPracticeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeTests.swift; sourceTree = "<group>"; };
 		BADD81852B775018001B16B3 /* SwiftUI-PracticeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-PracticeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BADD81892B775018001B16B3 /* SwiftUI_PracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_PracticeUITests.swift; sourceTree = "<group>"; };
-		BADD818B2B775018001B16B3 /* SwiftUI_PracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_PracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		BADD81892B775018001B16B3 /* SwiftUIPracticeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeUITests.swift; sourceTree = "<group>"; };
+		BADD818B2B775018001B16B3 /* SwiftUIPracticeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIPracticeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		BADD819C2B77512F001B16B3 /* ClockView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		BADD819E2B775141001B16B3 /* ClockFaceCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockFaceCanvas.swift; sourceTree = "<group>"; };
 		BADD81A02B77514C001B16B3 /* ClockHandsCanvas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockHandsCanvas.swift; sourceTree = "<group>"; };
@@ -101,8 +105,10 @@
 			isa = PBXGroup;
 			children = (
 				BADD819B2B775122001B16B3 /* ClockView */,
-				BADD816E2B775017001B16B3 /* SwiftUI_PracticeApp.swift */,
+				BADD816E2B775017001B16B3 /* SwiftUIPracticeApp.swift */,
 				BADD81702B775017001B16B3 /* ContentView.swift */,
+				BA52042C2B7DEC03001C1D99 /* Topic.swift */,
+				BA52042E2B7DEEBD001C1D99 /* Component.swift */,
 				BADD81722B775018001B16B3 /* Assets.xcassets */,
 				BADD81742B775018001B16B3 /* Preview Content */,
 			);
@@ -120,7 +126,7 @@
 		BADD817E2B775018001B16B3 /* SwiftUI-PracticeTests */ = {
 			isa = PBXGroup;
 			children = (
-				BADD817F2B775018001B16B3 /* SwiftUI_PracticeTests.swift */,
+				BADD817F2B775018001B16B3 /* SwiftUIPracticeTests.swift */,
 			);
 			path = "SwiftUI-PracticeTests";
 			sourceTree = "<group>";
@@ -128,8 +134,8 @@
 		BADD81882B775018001B16B3 /* SwiftUI-PracticeUITests */ = {
 			isa = PBXGroup;
 			children = (
-				BADD81892B775018001B16B3 /* SwiftUI_PracticeUITests.swift */,
-				BADD818B2B775018001B16B3 /* SwiftUI_PracticeUITestsLaunchTests.swift */,
+				BADD81892B775018001B16B3 /* SwiftUIPracticeUITests.swift */,
+				BADD818B2B775018001B16B3 /* SwiftUIPracticeUITestsLaunchTests.swift */,
 			);
 			path = "SwiftUI-PracticeUITests";
 			sourceTree = "<group>";
@@ -318,9 +324,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				BADD81712B775017001B16B3 /* ContentView.swift in Sources */,
+				BA52042F2B7DEEBD001C1D99 /* Component.swift in Sources */,
+				BA52042D2B7DEC03001C1D99 /* Topic.swift in Sources */,
 				BADD81A12B77514C001B16B3 /* ClockHandsCanvas.swift in Sources */,
 				BADD819D2B77512F001B16B3 /* ClockView.swift in Sources */,
-				BADD816F2B775017001B16B3 /* SwiftUI_PracticeApp.swift in Sources */,
+				BADD816F2B775017001B16B3 /* SwiftUIPracticeApp.swift in Sources */,
 				BADD819F2B775141001B16B3 /* ClockFaceCanvas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -329,7 +337,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BADD81802B775018001B16B3 /* SwiftUI_PracticeTests.swift in Sources */,
+				BADD81802B775018001B16B3 /* SwiftUIPracticeTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,8 +345,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BADD818A2B775018001B16B3 /* SwiftUI_PracticeUITests.swift in Sources */,
-				BADD818C2B775018001B16B3 /* SwiftUI_PracticeUITestsLaunchTests.swift in Sources */,
+				BADD818A2B775018001B16B3 /* SwiftUIPracticeUITests.swift in Sources */,
+				BADD818C2B775018001B16B3 /* SwiftUIPracticeUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

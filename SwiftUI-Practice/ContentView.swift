@@ -7,30 +7,41 @@
 
 import SwiftUI
 
-// MARK: - NavigatingViewEnum
-
-enum NavigatingViewEnum: String, CaseIterable {
-  case canvasView
-}
-
 // MARK: - ContentView
 
 struct ContentView: View {
+  private let topics: [Subject: [Topic]]
+
+  init(topics: [Subject: [Topic]]) {
+    self.topics = topics
+  }
+
   var body: some View {
     NavigationStack {
-      List(NavigatingViewEnum.allCases, id: \.rawValue) { subject in
-        NavigationLink(subject.rawValue) {
-          switch subject {
-          case .canvasView:
-            ClockView()
+      List {
+        ForEach(Subject.allCases, id: \.self) { section in
+          Section(section.rawValue) {
+            ForEach(topics[section] ?? [], id: \.self) { topic in
+              NavigationLink(destination: destinationView(section: topic)) {
+                Text("\(topic.description)")
+              }
+            }
           }
         }
       }
+      .navigationTitle("SwiftUI-Practice")
     }
-    .navigationTitle("Practice")
+  }
+
+  @ViewBuilder
+  private func destinationView(section topic: Topic) -> some View {
+    switch topic {
+    case .clockView:
+      ClockView()
+    }
   }
 }
 
 #Preview {
-  ContentView()
+  ContentView(topics: RootComponent().topics)
 }
