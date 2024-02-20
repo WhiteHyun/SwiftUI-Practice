@@ -12,6 +12,7 @@ import Foundation
 enum Subject: String, CaseIterable {
   case canvas
   case path
+  case wwdc
 }
 
 // MARK: - Topic
@@ -19,6 +20,7 @@ enum Subject: String, CaseIterable {
 enum Topic: CaseIterable {
   case clockView
   case bubbleShape
+  case dataEssentialsInSwiftUI
 }
 
 // MARK: CustomStringConvertible
@@ -30,6 +32,8 @@ extension Topic: CustomStringConvertible {
       "Clock View ⏱️"
     case .bubbleShape:
       "Bubble Shape 💬"
+    case .dataEssentialsInSwiftUI:
+      "WWDC 🧑🏻‍💻"
     }
   }
 }

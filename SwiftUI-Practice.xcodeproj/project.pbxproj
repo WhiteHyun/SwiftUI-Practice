@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA402F4D2B82F46000E86AAD /* BookCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA402F4C2B82F46000E86AAD /* BookCard.swift */; };
+		BA402F4F2B82F46D00E86AAD /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA402F4E2B82F46D00E86AAD /* Book.swift */; };
+		BA402F512B82FA8300E86AAD /* RingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA402F502B82FA8300E86AAD /* RingProgressView.swift */; };
+		BA402F532B83232D00E86AAD /* BookCardListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA402F522B83232D00E86AAD /* BookCardListView.swift */; };
+		BA402F552B83292800E86AAD /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA402F542B83292800E86AAD /* BookView.swift */; };
 		BA52042D2B7DEC03001C1D99 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52042C2B7DEC03001C1D99 /* Topic.swift */; };
 		BA52042F2B7DEEBD001C1D99 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52042E2B7DEEBD001C1D99 /* Component.swift */; };
 		BA5204312B7E0536001C1D99 /* BubbleShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA5204302B7E0536001C1D99 /* BubbleShape.swift */; };
@@ -41,6 +46,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA402F4C2B82F46000E86AAD /* BookCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCard.swift; sourceTree = "<group>"; };
+		BA402F4E2B82F46D00E86AAD /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		BA402F502B82FA8300E86AAD /* RingProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingProgressView.swift; sourceTree = "<group>"; };
+		BA402F522B83232D00E86AAD /* BookCardListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCardListView.swift; sourceTree = "<group>"; };
+		BA402F542B83292800E86AAD /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
 		BA52042C2B7DEC03001C1D99 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 		BA52042E2B7DEEBD001C1D99 /* Component.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Component.swift; sourceTree = "<group>"; };
 		BA5204302B7E0536001C1D99 /* BubbleShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleShape.swift; sourceTree = "<group>"; };
@@ -85,6 +95,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA402F4A2B82F42400E86AAD /* WWDC */ = {
+			isa = PBXGroup;
+			children = (
+				BA402F4B2B82F42800E86AAD /* Data-Essentials-in-SwiftUI */,
+			);
+			path = WWDC;
+			sourceTree = "<group>";
+		};
+		BA402F4B2B82F42800E86AAD /* Data-Essentials-in-SwiftUI */ = {
+			isa = PBXGroup;
+			children = (
+				BA402F4C2B82F46000E86AAD /* BookCard.swift */,
+				BA402F522B83232D00E86AAD /* BookCardListView.swift */,
+				BA402F502B82FA8300E86AAD /* RingProgressView.swift */,
+				BA402F542B83292800E86AAD /* BookView.swift */,
+				BA402F4E2B82F46D00E86AAD /* Book.swift */,
+			);
+			path = "Data-Essentials-in-SwiftUI";
+			sourceTree = "<group>";
+		};
 		BA5204322B7E0539001C1D99 /* BubbleShape */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +147,7 @@
 		BADD816D2B775017001B16B3 /* SwiftUI-Practice */ = {
 			isa = PBXGroup;
 			children = (
+				BA402F4A2B82F42400E86AAD /* WWDC */,
 				BADD819B2B775122001B16B3 /* ClockView */,
 				BADD816E2B775017001B16B3 /* SwiftUIPracticeApp.swift */,
 				BADD81702B775017001B16B3 /* ContentView.swift */,
@@ -337,12 +368,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA402F4D2B82F46000E86AAD /* BookCard.swift in Sources */,
+				BA402F512B82FA8300E86AAD /* RingProgressView.swift in Sources */,
 				BADD81712B775017001B16B3 /* ContentView.swift in Sources */,
 				BA5204312B7E0536001C1D99 /* BubbleShape.swift in Sources */,
+				BA402F4F2B82F46D00E86AAD /* Book.swift in Sources */,
+				BA402F552B83292800E86AAD /* BookView.swift in Sources */,
 				BA52042F2B7DEEBD001C1D99 /* Component.swift in Sources */,
 				BA5204342B7E055E001C1D99 /* BubbleView.swift in Sources */,
 				BA52042D2B7DEC03001C1D99 /* Topic.swift in Sources */,
 				BADD81A12B77514C001B16B3 /* ClockHandsCanvas.swift in Sources */,
+				BA402F532B83232D00E86AAD /* BookCardListView.swift in Sources */,
 				BADD819D2B77512F001B16B3 /* ClockView.swift in Sources */,
 				BADD816F2B775017001B16B3 /* SwiftUIPracticeApp.swift in Sources */,
 				BADD819F2B775141001B16B3 /* ClockFaceCanvas.swift in Sources */,

@@ -40,6 +40,8 @@ struct ContentView: View {
       ClockView()
     case .bubbleShape:
       BubbleView()
+    case .dataEssentialsInSwiftUI:
+      BookCardListView()
     }
   }
 }
