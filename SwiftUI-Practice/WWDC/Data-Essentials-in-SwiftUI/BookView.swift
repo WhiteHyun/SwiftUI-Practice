@@ -50,6 +50,7 @@ struct BookView: View {
           icon: { Image(systemName: "book.circle") }
         )
       }
+      .padding(.vertical, 10)
       .sheet(isPresented: $editorConfig.isEditorPresented) {
         ProgressEditor(editorConfig: $editorConfig)
           .presentationDetents([.fraction(0.4)])
@@ -60,7 +61,7 @@ struct BookView: View {
         Spacer()
         Text(.now, style: .date)
       }
-      .padding(.horizontal, 10)
+      .padding(10)
       Divider()
         .padding(.leading, 10)
       Spacer()
