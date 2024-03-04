@@ -33,7 +33,7 @@ extension Topic: CustomStringConvertible {
     case .bubbleShape:
       "Bubble Shape 💬"
     case .dataEssentialsInSwiftUI:
-      "WWDC 🧑🏻‍💻"
+      "Data Essentials in SwiftUI 🧑🏻‍💻"
     }
   }
 }
