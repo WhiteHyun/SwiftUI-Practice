@@ -10,5 +10,6 @@ struct RootComponent {
     .canvas: [.clockView],
     .path: [.bubbleShape],
     .wwdc: [.dataEssentialsInSwiftUI],
+    .personal: [.dynamicProperty],
   ]
 }

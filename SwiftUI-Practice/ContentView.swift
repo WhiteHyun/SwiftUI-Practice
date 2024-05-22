@@ -42,6 +42,8 @@ struct ContentView: View {
       BubbleView()
     case .dataEssentialsInSwiftUI:
       BookCardListView()
+    case .dynamicProperty:
+      DynamicPropertyPracticeView()
     }
   }
 }

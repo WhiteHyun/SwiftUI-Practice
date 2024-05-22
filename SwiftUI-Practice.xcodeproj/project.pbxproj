@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BA0516732BF8860E00E2767A /* DynamicPropertyPracticeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0516722BF8860E00E2767A /* DynamicPropertyPracticeView.swift */; };
+		BA0516772BF8C0A400E2767A /* SizeKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0516762BF8C0A400E2767A /* SizeKey.swift */; };
+		BA05167A2BF8C2BE00E2767A /* View+heightChangePreference.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA0516792BF8C2BE00E2767A /* View+heightChangePreference.swift */; };
 		BA402F4D2B82F46000E86AAD /* BookCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA402F4C2B82F46000E86AAD /* BookCard.swift */; };
 		BA402F4F2B82F46D00E86AAD /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA402F4E2B82F46D00E86AAD /* Book.swift */; };
 		BA402F512B82FA8300E86AAD /* RingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA402F502B82FA8300E86AAD /* RingProgressView.swift */; };
@@ -46,6 +49,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BA0516722BF8860E00E2767A /* DynamicPropertyPracticeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicPropertyPracticeView.swift; sourceTree = "<group>"; };
+		BA0516762BF8C0A400E2767A /* SizeKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SizeKey.swift; sourceTree = "<group>"; };
+		BA0516792BF8C2BE00E2767A /* View+heightChangePreference.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+heightChangePreference.swift"; sourceTree = "<group>"; };
 		BA402F4C2B82F46000E86AAD /* BookCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCard.swift; sourceTree = "<group>"; };
 		BA402F4E2B82F46D00E86AAD /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		BA402F502B82FA8300E86AAD /* RingProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingProgressView.swift; sourceTree = "<group>"; };
@@ -95,6 +101,38 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BA0516702BF8860100E2767A /* Personal */ = {
+			isa = PBXGroup;
+			children = (
+				BA0516712BF8860600E2767A /* DynamicProperty */,
+			);
+			path = Personal;
+			sourceTree = "<group>";
+		};
+		BA0516712BF8860600E2767A /* DynamicProperty */ = {
+			isa = PBXGroup;
+			children = (
+				BA0516722BF8860E00E2767A /* DynamicPropertyPracticeView.swift */,
+			);
+			path = DynamicProperty;
+			sourceTree = "<group>";
+		};
+		BA0516742BF8C09300E2767A /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BA0516762BF8C0A400E2767A /* SizeKey.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		BA0516782BF8C2AB00E2767A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BA0516792BF8C2BE00E2767A /* View+heightChangePreference.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		BA402F4A2B82F42400E86AAD /* WWDC */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +185,9 @@
 		BADD816D2B775017001B16B3 /* SwiftUI-Practice */ = {
 			isa = PBXGroup;
 			children = (
+				BA0516782BF8C2AB00E2767A /* Extensions */,
+				BA0516742BF8C09300E2767A /* Utils */,
+				BA0516702BF8860100E2767A /* Personal */,
 				BA402F4A2B82F42400E86AAD /* WWDC */,
 				BADD819B2B775122001B16B3 /* ClockView */,
 				BADD816E2B775017001B16B3 /* SwiftUIPracticeApp.swift */,
@@ -374,13 +415,16 @@
 				BA5204312B7E0536001C1D99 /* BubbleShape.swift in Sources */,
 				BA402F4F2B82F46D00E86AAD /* Book.swift in Sources */,
 				BA402F552B83292800E86AAD /* BookView.swift in Sources */,
+				BA05167A2BF8C2BE00E2767A /* View+heightChangePreference.swift in Sources */,
 				BA52042F2B7DEEBD001C1D99 /* Component.swift in Sources */,
 				BA5204342B7E055E001C1D99 /* BubbleView.swift in Sources */,
 				BA52042D2B7DEC03001C1D99 /* Topic.swift in Sources */,
 				BADD81A12B77514C001B16B3 /* ClockHandsCanvas.swift in Sources */,
 				BA402F532B83232D00E86AAD /* BookCardListView.swift in Sources */,
 				BADD819D2B77512F001B16B3 /* ClockView.swift in Sources */,
+				BA0516772BF8C0A400E2767A /* SizeKey.swift in Sources */,
 				BADD816F2B775017001B16B3 /* SwiftUIPracticeApp.swift in Sources */,
+				BA0516732BF8860E00E2767A /* DynamicPropertyPracticeView.swift in Sources */,
 				BADD819F2B775141001B16B3 /* ClockFaceCanvas.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

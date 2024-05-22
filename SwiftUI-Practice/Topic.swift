@@ -13,6 +13,7 @@ enum Subject: String, CaseIterable {
   case canvas
   case path
   case wwdc
+  case personal
 }
 
 // MARK: - Topic
@@ -21,6 +22,7 @@ enum Topic: CaseIterable {
   case clockView
   case bubbleShape
   case dataEssentialsInSwiftUI
+  case dynamicProperty
 }
 
 // MARK: CustomStringConvertible
@@ -34,6 +36,8 @@ extension Topic: CustomStringConvertible {
       "Bubble Shape 💬"
     case .dataEssentialsInSwiftUI:
       "Data Essentials in SwiftUI 🧑🏻‍💻"
+    case .dynamicProperty:
+      "Dynamic Property "
     }
   }
 }
