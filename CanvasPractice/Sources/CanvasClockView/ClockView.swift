@@ -9,10 +9,13 @@ import SwiftUI
 
 // MARK: - ClockView
 
-struct ClockView: View {
+public struct ClockView: View {
   @State private var isEditing: Bool = false
   @State private var timeInterval: TimeInterval = Constants.timeLineInterval
-  var body: some View {
+  public init() {
+  }
+
+  public var body: some View {
     GeometryReader { proxy in
       VStack {
         HStack {
@@ -54,8 +57,4 @@ private extension ClockView {
   enum Metrics {
     static let padding: CGFloat = 20
   }
-}
-
-#Preview {
-  ClockView()
 }

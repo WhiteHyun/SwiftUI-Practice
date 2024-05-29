@@ -36,13 +36,16 @@ struct Capitalized: DynamicProperty {
 
 // MARK: - DynamicPropertyPracticeView
 
-struct DynamicPropertyPracticeView: View {
+public struct DynamicPropertyPracticeView: View {
   @Capitalized var name = ""
   @State private var password: String = ""
   @State private var sheetHeight: CGFloat = .zero
   @State private var showSheet: Bool = false
 
-  var body: some View {
+  public init() {
+  }
+
+  public var body: some View {
     ZStack {
       Image(.background)
         .resizable()
@@ -147,32 +150,4 @@ struct DynamicPropertyPracticeView: View {
       sheetHeight = height
     }
   }
-}
-
-// MARK: - CustomTextField
-
-private struct CustomTextField: View {
-  let icon: String
-  let hint: String
-  @Binding var text: String
-  let isPassword: Bool
-
-  var body: some View {
-    VStack(alignment: .leading, spacing: 12) {
-      if isPassword {
-        SecureField(hint, text: $text)
-      } else {
-        TextField(hint, text: $text)
-      }
-      Divider()
-    }
-    .overlay(alignment: .trailing) {
-      Image(systemName: icon)
-        .foregroundStyle(.gray)
-    }
-  }
-}
-
-#Preview {
-  DynamicPropertyPracticeView()
 }

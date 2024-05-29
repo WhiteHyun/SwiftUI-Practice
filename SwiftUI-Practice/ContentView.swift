@@ -10,40 +10,33 @@ import SwiftUI
 // MARK: - ContentView
 
 struct ContentView: View {
-  private let topics: [Subject: [Topic]]
+  private let topics: [ViewItem]
 
-  init(topics: [Subject: [Topic]]) {
+  init(topics: [ViewItem]) {
     self.topics = topics
   }
 
   var body: some View {
     NavigationStack {
       List {
-        ForEach(Subject.allCases, id: \.self) { section in
-          Section(section.rawValue) {
-            ForEach(topics[section] ?? [], id: \.self) { topic in
-              NavigationLink(destination: destinationView(section: topic)) {
-                Text("\(topic.description)")
+        ForEach(Category.allCases, id: \.self) { category in
+          Section(category.rawValue.capitalized) {
+            ForEach(topics.filter { $0.category == category }) { item in
+              NavigationLink(destination: item.view) {
+                VStack(alignment: .leading) {
+                  Text(item.title)
+                    .font(.headline)
+                  Text(item.caption)
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+                }
+                .padding(.vertical, 4)
               }
             }
           }
         }
       }
       .navigationTitle("SwiftUI-Practice")
-    }
-  }
-
-  @ViewBuilder
-  private func destinationView(section topic: Topic) -> some View {
-    switch topic {
-    case .clockView:
-      ClockView()
-    case .bubbleShape:
-      BubbleView()
-    case .dataEssentialsInSwiftUI:
-      BookCardListView()
-    case .dynamicProperty:
-      DynamicPropertyPracticeView()
     }
   }
 }

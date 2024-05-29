@@ -7,10 +7,13 @@
 
 import SwiftUI
 
-struct BubbleView: View {
+public struct BubbleView: View {
   @State var drawFraction: CGFloat = 0
 
-  var body: some View {
+  public init() {
+  }
+
+  public var body: some View {
     VStack {
       BubbleShape()
         .trim(from: 0, to: drawFraction)
@@ -25,8 +28,4 @@ struct BubbleView: View {
       .tint(Color.gray)
     }
   }
-}
-
-#Preview {
-  BubbleView()
 }
