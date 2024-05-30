@@ -13,10 +13,10 @@ struct ViewItem: Identifiable {
   let id: UUID
   let category: Category
   let title: String
-  let caption: String
+  let caption: AttributedString
   let view: AnyView
 
-  init(id: UUID = .init(), category: Category, title: String, caption: String, view: AnyView) {
+  init(id: UUID = .init(), category: Category, title: String, caption: AttributedString, view: AnyView) {
     self.id = id
     self.category = category
     self.title = title

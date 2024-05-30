@@ -10,6 +10,7 @@ import PathBubbleShapeView
 import PersonalDynamicPropertyPracticeView
 import SwiftUI
 import WWDC_Data_Essentials_in_SwiftUI
+import WWDC_Explore_Structured_Concurrency_in_Swift
 
 // MARK: - RootComponent
 
@@ -29,8 +30,8 @@ struct RootComponent {
     ),
     .init(
       category: .wwdc,
-      title: "Data Essentials in SwiftUI 🧑🏻‍💻",
-      caption: "WWDC 영상 중 `Data Essentials in SwiftUI`에 관해 공부",
+      title: "Data Essentials in SwiftUI",
+      caption: try! .init(markdown: "WWDC 영상 중 `Data Essentials in SwiftUI`에 관해 공부"),
       view: AnyView(BookCardListView())
     ),
     .init(
@@ -38,6 +39,12 @@ struct RootComponent {
       title: "Dynamic Property ",
       caption: "Dynamic Property 학습",
       view: AnyView(DynamicPropertyPracticeView())
+    ),
+    .init(
+      category: .wwdc,
+      title: "Explore Structured Concurrency in Swift",
+      caption: try! .init(markdown: "WWDC 영상 중 `Structured Concurrency`에 관해 공부"),
+      view: AnyView(ExploreStructuredConcurrencyView())
     ),
   ]
 }

@@ -12,6 +12,7 @@
 		BA0BA1382C06F5AE00281AB2 /* PathBubbleShapeView in Frameworks */ = {isa = PBXBuildFile; productRef = BA0BA1372C06F5AE00281AB2 /* PathBubbleShapeView */; };
 		BA0BA13A2C06F5AE00281AB2 /* PersonalDynamicPropertyPracticeView in Frameworks */ = {isa = PBXBuildFile; productRef = BA0BA1392C06F5AE00281AB2 /* PersonalDynamicPropertyPracticeView */; };
 		BA0BA13C2C06F5AE00281AB2 /* WWDC-Data-Essentials-in-SwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = BA0BA13B2C06F5AE00281AB2 /* WWDC-Data-Essentials-in-SwiftUI */; };
+		BA2B475F2C071A8400E62908 /* WWDC-Explore-Structured-Concurrency-in-Swift in Frameworks */ = {isa = PBXBuildFile; productRef = BA2B475E2C071A8400E62908 /* WWDC-Explore-Structured-Concurrency-in-Swift */; };
 		BA52042D2B7DEC03001C1D99 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52042C2B7DEC03001C1D99 /* Category.swift */; };
 		BA52042F2B7DEEBD001C1D99 /* Component.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA52042E2B7DEEBD001C1D99 /* Component.swift */; };
 		BADD816F2B775017001B16B3 /* SwiftUIPracticeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = BADD816E2B775017001B16B3 /* SwiftUIPracticeApp.swift */; };
@@ -68,6 +69,7 @@
 				BA0BA1382C06F5AE00281AB2 /* PathBubbleShapeView in Frameworks */,
 				BA0BA13A2C06F5AE00281AB2 /* PersonalDynamicPropertyPracticeView in Frameworks */,
 				BA0BA1362C06F5AE00281AB2 /* CanvasClockView in Frameworks */,
+				BA2B475F2C071A8400E62908 /* WWDC-Explore-Structured-Concurrency-in-Swift in Frameworks */,
 				BA0BA13C2C06F5AE00281AB2 /* WWDC-Data-Essentials-in-SwiftUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,6 +209,7 @@
 				BA0BA1372C06F5AE00281AB2 /* PathBubbleShapeView */,
 				BA0BA1392C06F5AE00281AB2 /* PersonalDynamicPropertyPracticeView */,
 				BA0BA13B2C06F5AE00281AB2 /* WWDC-Data-Essentials-in-SwiftUI */,
+				BA2B475E2C071A8400E62908 /* WWDC-Explore-Structured-Concurrency-in-Swift */,
 			);
 			productName = "SwiftUI-Practice";
 			productReference = BADD816B2B775017001B16B3 /* SwiftUI-Practice.app */;
@@ -720,6 +723,10 @@
 		BA0BA13B2C06F5AE00281AB2 /* WWDC-Data-Essentials-in-SwiftUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = "WWDC-Data-Essentials-in-SwiftUI";
+		};
+		BA2B475E2C071A8400E62908 /* WWDC-Explore-Structured-Concurrency-in-Swift */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = "WWDC-Explore-Structured-Concurrency-in-Swift";
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
