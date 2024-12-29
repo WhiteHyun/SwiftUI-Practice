@@ -5,6 +5,7 @@
 //  Created by 홍승현 on 5/29/24.
 //
 
+import Observation
 import SwiftUI
 
 // MARK: - ThumbnailFailedError
@@ -14,8 +15,9 @@ struct ThumbnailFailedError: Error {
 
 // MARK: - Interactor
 
-private final class Interactor: NSObject, ObservableObject, URLSessionTaskDelegate {
-  @Published private(set) var images: [UIImage] = [
+@Observable
+private final class Interactor: NSObject, URLSessionTaskDelegate {
+  private(set) var images: [UIImage] = [
     .init(systemName: "photo")!,
     .init(systemName: "photo")!,
     .init(systemName: "photo")!,
@@ -23,6 +25,7 @@ private final class Interactor: NSObject, ObservableObject, URLSessionTaskDelega
     .init(systemName: "photo")!,
   ]
 
+  @ObservationIgnored
   let ids: [String] = [
     "4k-minecraft-37440",
     "4k-minecraft-37441",
@@ -30,7 +33,7 @@ private final class Interactor: NSObject, ObservableObject, URLSessionTaskDelega
     "4k-minecraft-37443",
     "4k-minecraft-37444",
   ]
-  @Published private(set) var progresses: [Double] = [0, 0, 0, 0, 0]
+  private(set) var progresses: [Double] = [0, 0, 0, 0, 0]
   private var observations: [NSKeyValueObservation] = []
 
   func fetchOneThumbnail(withID id: String) async throws -> UIImage {
@@ -113,10 +116,8 @@ private final class Interactor: NSObject, ObservableObject, URLSessionTaskDelega
       return
     }
 
-    let observation = task.progress.observe(\.fractionCompleted) { progress, _ in
-      DispatchQueue.main.async {
-        self.progresses[index] = progress.fractionCompleted
-      }
+    let observation = task.progress.observe(\.fractionCompleted) { [weak self] progress, _ in
+      self?.progresses[index] = progress.fractionCompleted
     }
 
     observations.append(observation)
@@ -126,7 +127,7 @@ private final class Interactor: NSObject, ObservableObject, URLSessionTaskDelega
 // MARK: - ExploreStructuredConcurrencyView
 
 public struct ExploreStructuredConcurrencyView: View {
-  @StateObject private var interactor = Interactor()
+  @State private var interactor = Interactor()
 
   public init() {
   }
